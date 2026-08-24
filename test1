@@ -1,0 +1,31 @@
+@echo off
+
+echo ===== JENKINS GIT TEST =====
+
+echo Git Version:
+git --version
+
+echo.
+echo Current Workspace:
+echo %WORKSPACE%
+
+echo.
+echo Git Repository Information:
+git remote -v
+
+echo.
+echo Git Branch:
+git branch
+
+echo.
+echo Git Status:
+git status
+
+echo.
+echo Latest Commit:
+git log -1
+
+echo.
+echo ===== GIT TEST SUCCESS =====
+
+exit /b 0
